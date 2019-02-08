@@ -1,3 +1,5 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/eiser82/algo_ds)](https://goreportcard.com/report/github.com/eiser82/algo_ds)
+
 # Golang Algorithms and Data Structures
 
 This repository contains Golang based examples of many
