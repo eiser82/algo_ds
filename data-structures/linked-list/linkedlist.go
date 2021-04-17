@@ -3,21 +3,20 @@ package linkedlist
 import "fmt"
 
 // Node represents an element of the list
-type node struct {
+type Node struct {
 	data int
-	next *node
+	next *Node
 }
 
 // LinkedList is the list itself
-type linkedList struct {
-	head   *node
+type LinkedList struct {
+	head   *Node
 	length int
 }
 
-// prepend func inserts a new element
-// at the begining of the list
-func (l *linkedList) prepend(data int) {
-	newNode := node{data: data, next: nil}
+// Prepend adds an item to the beginning of the list
+func (l *linkedList) Prepend(data int) {
+	newNode := Node{data: data, next: nil}
 	if l.head != nil {
 		newNode.next = l.head
 		l.head = &newNode
@@ -28,8 +27,20 @@ func (l *linkedList) prepend(data int) {
 	}
 }
 
-// prints the list
-func (l *linkedList) print() {
+// Append: adds an item to the end of the linked list
+
+// Insert(i, t) adds an item t at position i
+
+// RemoveAt(i) removes a node at position i
+
+// IndexOf() returns the position of the item t
+
+//IsEmpty() returns true if the list is empty
+
+// Size() returns the size of the list
+
+// Print() returns the list
+func (l *linkedList) Print() {
 	if l.head == nil {
 		return
 	}
@@ -40,7 +51,3 @@ func (l *linkedList) print() {
 		currentNode = currentNode.next
 	}
 }
-
-// func (l *linkedList) deleteWithValue(value int) {
-
-// }
